@@ -29,3 +29,8 @@ const quiz =[
         correct:"True",
     }
 ];
+const questionElm = document.querySelector('question');
+ const aElm = document.querySelector('label[for="a"]');
+ const bElm = document.querySelector('label[for="b"]');
+ const cElm = document.querySelector('label[for="c"]');
+ const dElm = document.querySelector('label[for="d"]');
