@@ -35,6 +35,9 @@ const questionElm = document.querySelector('question');
  const cElm = document.querySelector('label[for="c"]');
  const dElm = document.querySelector('label[for="d"]');
 
+ const submitbtn = document.querySelector  ("submitBtn");
+ const answers =document.querySelectorAll('input[name="answer"]');
+
  let quizCount =0;
  let score =0;
 
@@ -60,3 +63,10 @@ const getSelectedAnswer =() => {
     });
     return selectAnswer;
 };
+const deselectAnswer = () =>{
+    answers.forEach(elm =>{
+    elm.checked =false;
+        
+    });
+       
+ }
