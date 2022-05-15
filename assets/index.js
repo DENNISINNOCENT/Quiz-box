@@ -34,3 +34,5 @@ const questionElm = document.querySelector('question');
  const bElm = document.querySelector('label[for="b"]');
  const cElm = document.querySelector('label[for="c"]');
  const dElm = document.querySelector('label[for="d"]');
+
+ let quizCount =0;
