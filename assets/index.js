@@ -70,3 +70,4 @@ const deselectAnswer = () =>{
     });
        
  }
+ submitBtn.addEventListener("click",()
