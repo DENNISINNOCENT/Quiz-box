@@ -17,3 +17,22 @@ h2 >{
      border-radius:5%;
      max-width: 100%;
  }
+ .container >#quiz>ul >li{
+    padding: 4%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    list-style: none;
+
+}
+.container >#submitBtn{
+    background-color: rgb(27, 51, 155);
+    width: 100%;
+    float: right;
+    font-size: 150%;
+    outline: none;
+    border-radius: 5%;
+
+}
+label{
+    cursor: pointer;
+}
