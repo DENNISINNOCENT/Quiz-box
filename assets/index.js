@@ -37,4 +37,15 @@ const questionElm = document.querySelector('question');
 
  let quizCount =0;
  let score =0;
- 
+
+
+ const loadQuiz = () => {
+    
+     let currQuiz =quiz[quizCount];
+    
+     question.innerHTML =currQuiz.question;
+     aElm.innerHTML =currQuiz.a;
+     bElm.innerHTML =currQuiz.b;
+     cElm.innerHTML =currQuiz.c;
+     dElm.innerHTML =currQuiz.d;
+};
