@@ -26,7 +26,7 @@ As a user of the application,you will be able to :
  * 
  ### Installation Process
  ****
-* Clone to thier repo : git clone https://github.com/Albert-Byrone/delani.git
+* Clone to thier repo : git clone https://github.com/DENNISINNOCENT/Quiz-box
 * Unzip the downloaded files in a folder of choice.
 * Open the index file from the zipped file with any browser.
  ****
