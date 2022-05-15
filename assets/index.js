@@ -79,3 +79,11 @@ const deselectAnswer = () =>{
           if(selectAnswer == quiz[quizCount].correct){
               score++;
           }
+          quizCount++;
+            loadQuiz();
+        }
+    }else{
+    alert("finished")
+    }    
+});
+ loadQuiz();
