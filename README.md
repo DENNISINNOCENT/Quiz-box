@@ -1,7 +1,7 @@
 # Quiz Box
  ## By Dennis Mwendwa
 ## Screenshot
- ![image]()
+ ![image](./assets/Screenshot%20from%202022-05-15%2022-29-19.png)
  ## Table of Content
  - [Description](#description)
  - [Features](#features)
