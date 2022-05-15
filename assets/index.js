@@ -70,4 +70,12 @@ const deselectAnswer = () =>{
     });
        
  }
- submitBtn.addEventListener("click",()
+ submitBtn.addEventListener("click",() => {
+    
+   
+    let selectAnswer= getSelectedAnswer();
+    if(quizCount < quiz.length){
+        if(selectAnswer){ 
+          if(selectAnswer == quiz[quizCount].correct){
+              score++;
+          }
