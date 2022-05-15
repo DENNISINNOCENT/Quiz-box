@@ -36,3 +36,5 @@ const questionElm = document.querySelector('question');
  const dElm = document.querySelector('label[for="d"]');
 
  let quizCount =0;
+ let score =0;
+ 
