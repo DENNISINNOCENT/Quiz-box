@@ -40,7 +40,7 @@ const questionElm = document.querySelector('question');
 
 
  const loadQuiz = () => {
-    
+    deselectAnswer();
      let currQuiz =quiz[quizCount];
     
      question.innerHTML =currQuiz.question;
@@ -48,4 +48,15 @@ const questionElm = document.querySelector('question');
      bElm.innerHTML =currQuiz.b;
      cElm.innerHTML =currQuiz.c;
      dElm.innerHTML =currQuiz.d;
+};
+const getSelectedAnswer =() => {
+     
+    let selectAnswer = false;
+
+    answers.forEach(elm =>{
+        if(elm.checked){
+          selectAnswer =elm.id;
+        }
+    });
+    return selectAnswer;
 };
