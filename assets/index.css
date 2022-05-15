@@ -8,3 +8,12 @@ body{
     align-items: center;
     height:100vh
 }
+h2 >{
+    padding-left: 50%;
+ }
+ .container{
+     background-color: aquamarine;
+     width: 600px;
+     border-radius:5%;
+     max-width: 100%;
+ }
