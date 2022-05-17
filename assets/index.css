@@ -16,8 +16,9 @@ h2 >{
      width: 600px;
      border-radius:5%;
      max-width: 100%;
+     font-size: 20px;
  }
- .container >#quiz>ul >li{
+ .container >#list >ul >li{
     padding: 4%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -36,3 +37,4 @@ h2 >{
 label{
     cursor: pointer;
 }
+

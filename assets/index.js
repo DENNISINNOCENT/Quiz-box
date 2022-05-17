@@ -22,11 +22,11 @@ const quiz =[
         correct:"True",
     },
     {
-        question:"Is c++ a low-level language",
-        a:"True",
-        b:"False",
-        c:"none",
-        correct:"True",
+        question:"Which one is not an html tag",
+        a:"h1 ",
+        b:"body",
+        c:"document.write",
+        correct:"document.write",
     }
 ];
 const questionElm = document.querySelector('question');
@@ -37,12 +37,13 @@ const questionElm = document.querySelector('question');
 
  const submitbtn = document.querySelector  ("submitBtn");
  const answers =document.querySelectorAll('input[name="answer"]');
+ const questElm = document.querySelector  ("quest");
 
  let quizCount =0;
  let score =0;
 
 
- const loadQuiz = () => {
+ const loadQuiz = function()  {
     deselectAnswer();
      let currQuiz =quiz[quizCount];
     
@@ -74,16 +75,16 @@ const deselectAnswer = () =>{
     
    
     let selectAnswer= getSelectedAnswer();
-    if(quizCount < quiz.length){
+    if(quizCount < quiz.length-1){
         if(selectAnswer){ 
-          if(selectAnswer == quiz[quizCount].correct){
+          if(selectAnswer === quiz[quizCount].correct){
               score++;
           }
           quizCount++;
-            loadQuiz();
+          loadQuiz();
         }
     }else{
-    alert("finished")
+    alert( score);
     }    
 });
  loadQuiz();
