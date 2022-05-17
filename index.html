@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz-box</title>
+    <title>Quiz -Box</title>
     <link rel="stylesheet" href="./assets/index.css">
 </head>
 <body>
     <div class="container">
-        <div class ="list">
-        <h1>Instructions</h1>
-        <ul> 
-            <li>Answer all Questions</li>
-            <li>The quiz is a one way Quiz so make sure you answer each question in order for you to go to the next</li>
-            <li>Success in your quiz</li>
-
+        <h1>Answer all the Questions</h1>  
+        <h2 id="question" id ="quest">QUIZ</h2>
+        <div id="list"> 
+            <ul>
+            <li>
+                
+                <input type="radio" name="answer" id="a">
+                <label for="a">Answer</label>
+            </li>
+            <li>
+                
+                <input type="radio" name="answer" id="b">
+                <label for="b">Answer</label>
+            </li>
+            <li>
+                
+                <input type="radio" name="answer" id="c">
+                <label for="c">Answer</label>
+            </li>
+            
         </ul>
-        <button id="submitBtn"><a href ="./assets/question.html" target="_self">Start</a></button>
-     </div>
-</div>
+    </div>
+    <button id="submitBtn">Next</button>
+    </div>
+    <script src="./assets/index.js"></script>
+    
 </body>
 </html>
