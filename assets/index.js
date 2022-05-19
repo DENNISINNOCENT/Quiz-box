@@ -29,17 +29,18 @@ const quiz =[
         correct:"document.write",
     }
 ];
-const questionElm = document.querySelector('question');
+ const questionElm = document.querySelector('question');
  const aElm = document.querySelector('label[for="a"]');
  const bElm = document.querySelector('label[for="b"]');
  const cElm = document.querySelector('label[for="c"]');
  const dElm = document.querySelector('label[for="d"]');
-
- const submitbtn = document.querySelector  ("submitBtn");
+  
  const answers =document.querySelectorAll('input[name="answer"]');
- const questElm = document.querySelector  ("quest");
 
- let quizCount =0;
+ const submitbtn = document.querySelector("submitBtn");
+ 
+
+ let quizCount =0; 
  let score =0;
 
 
@@ -52,10 +53,11 @@ const questionElm = document.querySelector('question');
      bElm.innerHTML =currQuiz.b;
      cElm.innerHTML =currQuiz.c;
      dElm.innerHTML =currQuiz.d;
+     correct.innerHTML =currQuiz.correct
 };
 const getSelectedAnswer =() => {
      
-    let selectAnswer = false;
+    let selectAnswer = true;
 
     answers.forEach(elm =>{
         if(elm.checked){
@@ -77,14 +79,22 @@ const deselectAnswer = () =>{
     let selectAnswer= getSelectedAnswer();
     if(quizCount < quiz.length-1){
         if(selectAnswer){ 
-          if(selectAnswer === quiz[quizCount].correct){
-              score++;
+          if(selectAnswer == quiz[quizCount].correct){
+              
           }
+          score++;
           quizCount++;
           loadQuiz();
         }
     }else{
-    alert( score);
-    }    
+
+    quest.innerHTML = `
+   <h2>You answered ${score}/${quiz.length} questions correctly</h2>
+   
+
+   <button onclick="location.reload()">Reload</button>
+   `;
+    } 
+     
 });
  loadQuiz();
